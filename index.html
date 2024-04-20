@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>receipt progect</title>
+  </head>
+  <body>
+    <div class="body">
+      <!-- todod : start of receipt form  -->
+      <div class="form">
+        <h1>The Magical Receipt</h1>
+        <div class="formInputes">
+          <div class="card">
+            <input type="text" placeholder="Product Title" id="ProductTitle" />
+            <!-- <span class="invailed">Enter valid Data !</span> -->
+          </div>
+
+          <div class="price">
+            <div class="card">
+              <input
+                type="number"
+                placeholder="Product price"
+                id="Productprice"
+              />
+              <!-- <span class="invailed">Enter valid Data !</span> -->
+            </div>
+            <div class="card">
+              <input type="number" placeholder="Product Tax %" />
+              <!-- <span class="invailed">Enter valid Data !</span> -->
+            </div>
+            <div class="card">
+              <input type="number" placeholder="Product discount" />
+              <!-- <span class="invailed">Enter valid Data ! </span> -->
+            </div>
+            <div class="card">
+              <input
+                type="number"
+                placeholder="Product Total"
+                required
+                readonly
+              />
+              <!-- <span class="invailed">Enter valid Data !</span> -->
+            </div>
+          </div>
+          <div class="card">
+            <input type="number" placeholder="count of added" />
+            <!-- <span class="invailed">Enter valid Data !</span> -->
+          </div>
+          <div class="card">
+            <input type="text" placeholder="Department" />
+            <!-- <span class="invailed">Enter valid Data !</span> -->
+          </div>
+        </div>
+        <input type="button" value="Add" class="btn" onclick="mainfnuction()" />
+      </div>
+      <!-- todod : enf of receipt form  -->
+      <!-- todod : start of receipts table  -->
+      <div class="data">
+        <h1>List of Products</h1>
+        <div class="card">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Tax</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Count</th>
+                <th>Department</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="tbody">
+              <!-- <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Tax</td>
+                <td>Discount</td>
+                <td>Total</td>
+                <td>Count</td>
+                <td>Total</td>
+                <td class="action">
+                  <input
+                    type="button"
+                    value="Edit"
+                    class="edit"
+                    onclick="updating(${i})"
+                  />
+                  <input
+                    type="button"
+                    value="Delete"
+                    class="delete"
+                    onclick="deletee(${i})"
+                  />
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- todod : end of receipts table  -->
+    </div>
+    <!-- todo: overlay layout -->
+    <div class="layer">
+      <div class="popup">
+        <h1>My Dear User</h1>
+        <h3>Please,Enter Valid data in inputs Field</h3>
+        <h5>click on the message to close the pop-up window</h5>
+      </div>
+    </div>
+    <!-- todojavascript file -->
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/test1.js"></script> -->
+    <!-- <script src="./js/goodVersion.js"></script> -->
+  </body>
+</html>
